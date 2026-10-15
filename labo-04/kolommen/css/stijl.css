@@ -6,3 +6,6 @@
 }
 
 /* === your rules === */
+main div:nth-child(1){
+    background-color: red;
+}
