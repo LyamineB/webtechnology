@@ -1,0 +1,47 @@
+/* stijl.css - labo 3, kleuren (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+
+}
+
+/* === your rules === */
+body{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;    
+}
+.codes{
+    margin-top: 1rem;
+}
+span:nth-child(2){
+    margin: 0 1rem;
+}
+li{
+    list-style: none;
+    height: 20vh;  
+    /* Op deze manier (vh) kan je ervoor zorgen dat de lijst gelijk gedeeld is over het zichtbaar scherm (nu dus 20 omdat er 5 blokken zijn) */
+    padding-top: 7vh;
+    /* Padding= in de 'doos', beschermt hetgeen in de 'doos' (isomo) */
+    /* Margin= is hetgeen rond de 'doos', dus de afstand tussen de 5 'dozen'  */
+}
+.tomato{
+    background-color: tomato;
+}
+.orangered{
+    background-color: orangered;
+}
+.coral{
+    background-color: coral;
+}
+.lightsalmon{
+    background-color: lightsalmon;
+}
+.darkorange{
+    background-color: darkorange;
+}
+

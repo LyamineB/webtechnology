@@ -1,0 +1,79 @@
+:root{
+    --papier: #fbf7f0;
+    --inkt: #2b2b2b;
+    --gedempt: #6b6b6b;
+    --accent: #b5451b;
+    --zebra: #f1e9dc;
+
+}
+
+body,nav a{
+    background-color: var(--papier);
+    font-size: 16px;
+    line-height: 1.6;
+    
+}
+nav a{
+    color: var(--accent);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;    
+}
+nav a:hover,
+nav a:focus{
+    color: var(--inkt);
+    text-decoration: underline;
+    
+} 
+h1{
+    color: var(--accent);
+    font-weight: normal;
+    font-size: 3rem;
+
+}
+
+h1 + p{
+    color: var(--gedempt);
+    font-style: italic
+    ;
+}
+
+#kaart,#bonen,#praktisch{
+    font-weight:normal;
+    color: var(--inkt);
+    font-style: verdana;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    color: var(--gedempt);
+    font-weight: normal;
+    font-size: 1,5rem;
+}
+.kaart li:nth-child(odd){
+background-color: var(--zebra);
+}
+ .prijs{
+    font-style: italic;
+    color: var(--gedempt);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.kaart{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--inkt);
+}
+h2+p a{
+    color: var(--accent);
+}
+h2 p,li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2,strong{
+    color: var(--accent);
+}
+footer,a{
+    text-align: center;
+    color: var(--gedempt);
+}
+
