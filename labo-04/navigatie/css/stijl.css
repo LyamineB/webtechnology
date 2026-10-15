@@ -2,7 +2,46 @@
 
 /* === tokens === */
 :root {
+    --balk:#1f3a2e;
+    --tekst: #f3efe6;
+    --accent:  #e6b53c;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding:0;
+    display: flex;
+    gap: 1rem;
+}
+li{
+    list-style: none;
+    border: 1px;
 
+}
+header{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: var(--balk);
+    padding: 1.3rem;
+    margin: 0.5rem 0.5rem;
+}
+ul a {
+    text-decoration: none;
+    color: var(--tekst);
+    padding: 0.5rem;
+    border-radius: 0.6rem 0.6rem;
+}
+header > a{
+    color: var(--accent);
+}
+ul a:hover,
+ul a.actief{
+    background-color: var(--accent);
+    color:var(--balk)
 }
 
 /* === your rules === */

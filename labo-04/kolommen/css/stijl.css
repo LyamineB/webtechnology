@@ -7,5 +7,32 @@
 
 /* === your rules === */
 main div:nth-child(1){
-    background-color: red;
+    background-color: darkturquoise;
+    flex: 1;
+}
+main div:nth-child(2){
+    background-color: darkviolet;
+    flex: 2; /* 2/4 vd witruimte want 1+2+1 =4 */
+}
+main div:nth-child(3){
+    background-color: deepskyblue; 
+    flex: 1; 
+}
+body{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 80vh;
+    display: flex;   /* maak van alle children columns */
+    gap: 4vw;
+}
+main div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
