@@ -2,7 +2,62 @@
 
 /* === tokens === */
 :root {
-
+  --groen: #4e9a52;
+  --roze: #f2a7d6;
+  --lime: #b4f52d;
+  --rood: #ea4d3d;
+}
+body {
+  background-color: black;
+}
+figcaption {
+  color: white;
+  text-align: center;
+  padding-top: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.lijst {
+  background-color: red;
+  width: 70vh;
+  height: 70vh;
+  margin: 15vh auto;
+  position: relative;
+}
+.lijst img {
+  aspect-ratio: 1/1;
+}
+.vlakje {
+  width: 8rem;
+  height: 8rem;
+  background-color: red;
 }
 
+.roze {
+  background-color: var(--roze);
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+  z-index: 3;
+}
+.groen {
+  background-color: var(--groen);
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  z-index: 2;
+}
+.rood {
+  background-color: var(--rood);
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 3; /* zindex bepaalt positionering tss 2 siblings --> hoger = bovenop */
+}
+.lime {
+  background-color: var(--lime);
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
+  z-index: 2;
+}
 /* === your rules === */

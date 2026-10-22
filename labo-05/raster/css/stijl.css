@@ -2,6 +2,60 @@
 
 /* === tokens === */
 :root {
+--a: #e9493f;
+--b: #edd24a;
+--c: #072f55;
+--d: #52a51a;
+--e: #efaad9;
+--f: #a5f129;
+--g: #ebc47a;
+--h: #e8882c;
+
+}
+main{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    gap: 1vh;
+    padding: 1vh;
+    grid-template-columns: repeat(4,1fr);
+    text-align: end;
+    
+}
+.vlak{
+    padding: 1rem;
+}
+.b,
+.h{
+    grid-column: 4;
+}
+.a{
+    background-color: var(--a);
+   
+}
+.b{
+    background-color:var(--b) ;
+}
+.c{
+    background-color:var(--c) ;
+}
+.d{
+    background-color:var(--d) ;
+}
+.e{
+    background-color: var(--e);
+}
+.f{
+    background-color:var(--f) ;
+}
+.g{
+    background-color: var(--g);
+}
+.h{
+    background-color: var(--h);
 
 }
 

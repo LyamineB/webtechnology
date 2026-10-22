@@ -2,7 +2,25 @@
 
 /* === tokens === */
 :root {
-
+  --blauw: #1e5bd8;
+  --roze: #e88bb4;
+  --oranje: #d98c1a;
 }
 
-/* === your rules === */
+.citaten {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2 rem;
+  gap: 1rem;
+}
+.citaat {
+  flex-basis: 18rem; /*streefbreedte, altijd proberen dit te vullen per class, maar enkel dit doet niets je moet nog die flex wrap in de main zetten (.citaten)*/
+  flex-grow: 1; /* elk kind krijgt evenveel flex grow waarde (dus ook de witruimte)*/
+  border-left: 0.5rem solid red;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.citaat p {
+  flex-grow: 1;
+}

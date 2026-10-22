@@ -2,7 +2,26 @@
 
 /* === tokens === */
 :root {
-
 }
+header a {
+  text-decoration: none;
+}
+header ul {
+  display: flex;
+  gap: 1rem;
 
+  justify-content: end;
+  list-style: none;
+}
 /* === your rules === */
+
+/* SELECTORKENNIS => CSS DINER
+FLEX => maakt kolommen van children (met flex-direction kan je de richting wijzigen) op parent display:flex + eventueel flex-wrap en eventueel gap
+op children flex-grow en flex-basis
+inoefenen met flex froggy en flexbox defense
+https://mastery.games/flexboxzombies
+GRID => maakt een raster waar je children kan op plaatsen.
+op parent display:grid + grid-template-columns: repeat(4,1fr) of 1fr 1fr 1fr 1fr en eventueel gap op child : grid-column: 2/4 => start op lijn 2 tot aan lijn 4 css grid garden
+ABSOLUTE vs RELATIVE => een child bovenop een parent plaatsen
+child => position: absolute + top, left, right, bottom (coordinaat) parent => position: relative
+sibling kan je een stacking order geven met z-index */
