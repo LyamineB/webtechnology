@@ -1,19 +1,112 @@
-/* stijl.css - labo 5, balk (reset.css is linked before this file) */
-
 /* === tokens === */
 :root {
+  --papier: #f8f7f5;
+  --inkt: #1a1a1a;
+  --gedempt: #6b6b6b;
+  --balk: #000000;
+  --links: #9a9a9a;
 }
+
+body {
+  background-color: var(--papier);
+}
+/* Navigatiebalk */
+header {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  background-color: var(--balk);
+  position: sticky;
+  top: 0;
+  padding: 0 2rem;
+}
+
 header a {
   text-decoration: none;
 }
+
+.logo {
+  margin-right: auto;
+  color: #ffffff;
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 header ul {
   display: flex;
-  gap: 1rem;
-
-  justify-content: end;
+  gap: 1.5rem;
   list-style: none;
 }
-/* === your rules === */
+
+header nav a {
+  color: var(--links);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+header nav .actief {
+  color: #ffffff;
+}
+
+header nav a:hover,
+header nav a:focus {
+  color: #ffffff;
+}
+
+/* Hoofdinhoud */
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--inkt);
+  background-color: var(--papier);
+}
+
+/* Titels */
+h1,
+h2 {
+  font-family: Georgia, serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+/* Inhoud en rubrieken */
+.inhoud {
+  margin-bottom: 3rem;
+}
+.inhoud a {
+  color: var(--inkt);
+  text-decoration: none;
+}
+section {
+  margin-top: 3rem;
+}
+main p {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--balk);
+  color: var(--links);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* Interne links */
+html {
+  scroll-padding-top: 3.5rem;
+}
 
 /* SELECTORKENNIS => CSS DINER
 FLEX => maakt kolommen van children (met flex-direction kan je de richting wijzigen) op parent display:flex + eventueel flex-wrap en eventueel gap
